@@ -5,44 +5,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/dist/output.css" rel="stylesheet">
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <title>Lesson 7</title>
     </head>
     <body>
         <header>
-            <nav class="flex justify-between px-2 items-center min-h-min bg-slate-800 ">
-                <div class="max-md:hidden">
-                    <h1 class="text-3xl text-white font-serif">CMT</h1>
-                      
+            <nav class="bg-slate-800 p-5 shadow md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center">
+                    <span class="text-white cursor-pointer">
+                        <a href="index.html" class="font-serif">CMT</a>
+
+                    </span>
+
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon class="text-white" name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
                 </div>
-                <ul class="flex justify-between items-center space-x-2">
-                    <li>
-                        <a class="text-white hover:text-blue-300" href="index.html">Layout 1</a>
+
+                <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-slate-700 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <!--<li class="">
+                        <a class="text-white" href="index.html">Welcome</a>
+                    </li>-->
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-white hover:text-blue-300 duration-500" href="layout1.html">Layout 1</a>
                     </li>
-                    <li>
-                        <a class="text-white hover:text-blue-300" href="layout2.html">Layout 2</a>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-white hover:text-blue-300 duration-500" href="layout2.html">Layout 2</a>
                     </li>
-                    <li>
-                        <a class="text-white hover:text-blue-300" href="layout3.html">Layout 3</a>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-white hover:text-blue-300 duration-500" href="layout3.html">Layout 3</a>
                     </li>
-                    <li>
-                        <a class="text-white hover:text-blue-300" href="layout4.html">Layout 4</a>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-white hover:text-blue-300 duration-500" href="layout4.html">Layout 4</a>
                     </li>
-                    <li>
-                        <a class="text-white hover:text-blue-300" href="layout5.html">Layout 5</a>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-white hover:text-blue-300 duration-500" href="layout5.html">Layout 5</a>
                     </li>
-                    <li>
-                        <a class="text-white hover:text-blue-300" href="layout6.html">Layout 6</a>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-white hover:text-blue-300 duration-500" href="layout6.html">Layout 6</a>
                     </li>
+
                 </ul>
-
-                <div class="md:hidden">
-                    <svg class="h-8 w-8 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
-                      </svg>
-                      
-                </div>
-
+                
             </nav>
 
         </header>
