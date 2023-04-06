@@ -537,6 +537,10 @@ video {
   width: 2rem;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -643,6 +647,10 @@ video {
 
 .justify-self-auto {
   justify-self: auto;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .bg-slate-200 {
