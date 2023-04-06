@@ -870,6 +870,10 @@ video {
   .md\:visible {
     visibility: visible;
   }
+
+  .md\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
