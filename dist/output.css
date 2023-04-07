@@ -590,10 +590,6 @@ video {
   z-index: 20;
 }
 
-.m-7 {
-  margin: 1.75rem;
-}
-
 .m-8 {
   margin: 2rem;
 }
@@ -1001,10 +997,6 @@ video {
 
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
-.\[i\:\FFFD\FFFD\FFFD 6\FFFDv\FFFD 6\FFFD\$\+\FFFD-k\3B5\FFFD\FFFD\FFFD\6\FFFD\16 4\FFFD\] {
-  i: ���6�v�6�$+�-kε����4�;
 }
 
 .hover\:text-blue-300:hover {
