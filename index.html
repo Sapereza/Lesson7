@@ -50,13 +50,117 @@
         </header>
 
 
-        <main>
+        <main class="flex flex-col w-screen items-center">
+            <section class="flex justify-center w-full h-3/5">
+                <div class="relative m-8">
+                    <h1 class="text-3xl font-serif text-center">Welcome</h1>
+                    <p class="text-center font-serif">
+                        This web page is for Lesson seven of the CMT-111-200 course at Bunker Hill Community College.
+                        <br>
+                        Each page on this site will display an example of a potential layout for a webpage.
+                        <br>
+                        This project aims to reinforce knowledge of HTML page layouts and content positioning.
+                        <br>
+                        The purpose of this lesson is to recreate the web page examples as shown in the below images.
+                        
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="w-9/12/12 h-2/5 bg-black flex">
+                <div class="relative">
+                    <ul id="slider">
+                        <li class="h-full relative flex justify-center">
+                            <img class="h-2/5 object-cover w-3/5" src="./images/layout1.png" alt="">
+                            <div class="absolute top-0 left-0 h-full w-full flex justify-center">
+                                <h2 class="text-2xl font-bold font-serif my-auto bg-black rounded-full bg-opacity-75 text-white text-center px-20">Layout # 1</h2>
+                            </div>
+                        </li>
+                        <li class="h-full relative hidden flex justify-center">
+                            <img class="h-2/5 object-cover w-3/5" src="./images/layout2.png" alt="">
+                            <div class="absolute top-0 left-0 h-full w-full flex justify-center">
+                                <h2 class="text-2xl font-bold font-serif my-auto bg-black rounded-full bg-opacity-75 text-white text-center px-20">Layout # 2</h2>
+                            </div>
+                        </li>
+                        <li class="h-full relative hidden flex justify-center">
+                            <img class="h-2/5 object-cover w-3/5" src="./images/layout3.png" alt="">
+                            <div class="absolute top-0 left-0 h-full w-full flex justify-center">
+                                <h2 class="text-2xl font-bold font-serif my-auto bg-black rounded-full bg-opacity-75 text-white text-center px-20">Layout # 3</h2>
+                            </div>
+                        </li>
+                        <li class="h-full relative hidden flex justify-center">
+                            <img class="h-2/5 object-cover w-3/5" src="./images/layout4.png" alt="">
+                            <div class="absolute top-0 left-0 h-full w-full flex justify-center">
+                                <h2 class="text-2xl font-bold font-serif my-auto bg-black rounded-full bg-opacity-75 text-white text-center px-20">Layout # 4</h2>
+                            </div>
+                        </li>
+                        <li class="h-full relative hidden flex justify-center">
+                            <img class="h-2/5 object-cover w-3/5" src="./images/layout5.png" alt="">
+                            <div class="absolute top-0 left-0 h-full w-full flex justify-center">
+                                <h2 class="text-2xl font-bold font-serif my-auto bg-black rounded-full bg-opacity-75 text-white text-center px-20">Layout # 5</h2>
+                            </div>
+                        </li>
+                        <li class="h-full relative hidden flex justify-center">
+                            <img class="h-2/5 object-cover w-3/5" src="./images/layout6.png" alt="">
+                            <div class="absolute top-0 left-0 h-full w-full flex justify-center">
+                                <h2 class="text-2xl font-bold font-serif my-auto bg-black rounded-full bg-opacity-75 text-white text-center px-20">Layout # 6</h2>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <div class="absolute px-5 flex h-full w-full top-0 left-0">
+                        <div class="my-auto w-full flex justify-between">
+                            <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                                  </svg>                                  
+                            </button>
+                            <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                  </svg>
+                                  
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
 
-        <footer>
-
+        <footer class="bg-white dark:bg-gray-900 -z-40">
+            <div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+               
+                <p class="text-sm text-gray-600 dark:text-gray-300">Designed & Built by Sarah Perez-Anderson - CMT-111-200 2023</p>
+            
+                <div class="flex -mx-2">
+    
+                    <!--GITHUB ICON LINK-->
+                    <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-slate-900 dark:hover:text-blue-400" aria-label="Github">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                            </path>
+                        </svg>
+                    </a>
+    
+                    <!--INDEED ICON LINK-->
+                    <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400" aria-label="Github">
+                        <ion-icon class="w-5 h-5" name="logo-linkedin"></ion-icon>
+                    </a>
+    
+    
+                    <!--CODEPEN ICON LINK-->
+                    <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-slate-900 dark:hover:text-blue-400" aria-label="Github">
+                        <ion-icon class="w-5 h-5" name="logo-codepen"></ion-icon>
+                    </a>
+    
+                </div>
+            </div>
         </footer>
 
     </body>
