@@ -840,6 +840,10 @@ video {
   height: 20rem;
 }
 
+.h-1\/5 {
+  height: 20%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -927,6 +931,10 @@ video {
 
 .w-2\/4 {
   width: 50%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .min-w-full {
@@ -1328,6 +1336,11 @@ video {
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .fill-current {
